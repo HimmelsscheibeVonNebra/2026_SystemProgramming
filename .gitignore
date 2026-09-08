@@ -1,0 +1,26 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Editor and LibreOffice temporary files
+*~
+*.swp
+*.swo
+.~lock.*#
+
+# C compilation outputs in the teaching examples
+/Codes/**/helloworld
+/Codes/**/hello
+/Codes/**/hello_dbg
+/Codes/**/warning
+/Codes/**/system_info
+/Codes/**/system_config
+/Codes/**/a.out
+/Codes/**/*.o
+/Codes/**/*.i
+/Codes/**/helloworld.s
+/Codes/**/*.dSYM/
+
+# Generated lab logs and temporary working directories
+/Codes/**/*.log
+/Codes/**/run-*/

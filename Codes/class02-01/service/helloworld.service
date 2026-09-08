@@ -1,0 +1,12 @@
+[Unit]
+Description=Week02 Hello World
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/helloworld
+DynamicUser=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

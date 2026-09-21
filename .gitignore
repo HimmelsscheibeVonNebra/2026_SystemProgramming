@@ -16,6 +16,8 @@
 /Codes/**/system_info
 /Codes/**/system_config
 /Codes/**/a.out
+/Codes/**/mystat
+/Codes/**/mini_ls
 /Codes/**/*.o
 /Codes/**/*.i
 /Codes/**/helloworld.s

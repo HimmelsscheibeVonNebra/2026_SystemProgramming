@@ -18,6 +18,27 @@
 /Codes/**/a.out
 /Codes/**/mystat
 /Codes/**/mini_ls
+/Codes/**/dir_create
+/Codes/**/dir_list
+/Codes/**/dir_chdir
+/Codes/**/dir_remove
+/Codes/**/file_create
+/Codes/**/file_write
+/Codes/**/file_read
+/Codes/**/file_seek
+/Codes/**/file_copy
+/Codes/**/read_chunks
+/Codes/**/test_write_all
+/Codes/**/file_copy_student
+/Codes/**/test_write_all_student
+/Codes/**/binary_write
+/Codes/**/binary_read
+/Codes/**/binary_seek
+/Codes/**/file_attr
+/Codes/**/mode_demo
+/Codes/**/sparse_demo
+/Codes/**/time_attrs
+/Codes/**/fd_unlink_demo
 /Codes/**/*.o
 /Codes/**/*.i
 /Codes/**/helloworld.s
@@ -26,3 +47,4 @@
 # Generated lab logs and temporary working directories
 /Codes/**/*.log
 /Codes/**/run-*/
+/Codes/**/run.*/

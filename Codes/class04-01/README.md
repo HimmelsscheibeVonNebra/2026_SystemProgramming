@@ -2,10 +2,18 @@
 
 발표자료는 [`Presentations/class04-01.pdf`](../../Presentations/class04-01.pdf)에 있습니다. 발표자료의 `labs/class04-01/` 경로는 이 저장소의 `Codes/class04-01/`에 해당합니다.
 
-저장소 루트에서 `cd Codes/class04-01` 후 `make`로 `mystat`과 `mini_ls`를 빌드합니다. Linux에서 실행하는 수업 예제입니다.
+[교수자용 수업 진행 대본](../../Presentations/class04-01-script.md): 교안 31장에 맞춘 120분 설명, 질문, 실습 명령과 예상 결과입니다.
+
+저장소 루트에서 `cd Codes/class04-01` 후 `make`로 예제를 빌드합니다. Linux에서 실행하는 수업 예제입니다.
 
 - `./mystat PATH`: `lstat`으로 종류, inode, 링크 수, 권한, 소유자, 크기를 표시합니다.
 - `./mini_ls DIRECTORY`: 한 디렉토리의 항목을 `종류 inode 크기 이름` 순서로 출력합니다. 마지막 심볼릭 링크는 따라가지 않습니다.
+- `./dir_create DIRECTORY`: 디렉토리를 만듭니다.
+- `./dir_list DIRECTORY`: `.`과 `..`를 포함한 이름 목록을 읽습니다.
+- `./dir_chdir DIRECTORY`: 현재 프로세스의 작업 위치를 바꾸고 전후 경로를 출력합니다.
+- `./dir_remove DIRECTORY`: 빈 디렉토리를 삭제합니다.
+
+디렉토리 예제는 [단계별 실습 안내](DIRECTORY.md)를 따라 실행합니다. `make test-directory`로 자동 확인할 수 있습니다.
 
 `mini_ls`는 `.`과 `..`만 생략하므로 숨김 파일도 출력합니다. 정렬과 재귀 탐색은 구현하지 않습니다. 개별 항목의 조회 실패는 stderr에 기록하고 계속하며 최종 종료 상태는 1입니다. 디렉토리 자체를 열지 못하면 바로 실패합니다. 파일 이름의 개행 등 특수문자 escaping은 확장 과제입니다.
 

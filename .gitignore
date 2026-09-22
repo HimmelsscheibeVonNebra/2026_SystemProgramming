@@ -2,6 +2,9 @@
 .DS_Store
 ._*
 
+# Markdown files (all directories, case-insensitive extension)
+*.[mM][dD]
+
 # Editor and LibreOffice temporary files
 *~
 *.swp

@@ -47,6 +47,11 @@
 /Codes/**/nofile_demo
 /Codes/**/proc_probe
 /Codes/**/sysinfo_demo
+/Codes/**/calendar_demo
+/Codes/**/tm_normalize
+/Codes/**/elapsed_demo
+/Codes/**/tslog
+/Codes/**/clock_show
 /Codes/**/*.o
 /Codes/**/*.i
 /Codes/**/helloworld.s

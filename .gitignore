@@ -52,6 +52,11 @@
 /Codes/**/elapsed_demo
 /Codes/**/tslog
 /Codes/**/clock_show
+/Codes/**/id_probe
+/Codes/**/arg_show
+/Codes/**/env_dump
+/Codes/**/cwd_probe
+/Codes/**/procinfo
 /Codes/**/*.o
 /Codes/**/*.i
 /Codes/**/helloworld.s

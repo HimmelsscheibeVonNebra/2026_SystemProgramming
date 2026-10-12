@@ -57,6 +57,16 @@
 /Codes/**/env_dump
 /Codes/**/cwd_probe
 /Codes/**/procinfo
+/Codes/**/addr_show
+/Codes/**/maps_show
+/Codes/**/state_show
+/Codes/**/hold_open
+/Codes/**/procdump
+/Codes/**/pagetouch
+/Codes/**/pstat
+/Codes/**/cpu_wait
+/Codes/**/reap_show
+/Codes/**/limit_lab
 /Codes/**/*.o
 /Codes/**/*.i
 /Codes/**/helloworld.s

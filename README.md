@@ -1,10 +1,10 @@
 # 2026 시스템 프로그래밍
 
-**V09** · 2026-11-10
+**V10** · 2026-11-10
 
-강의 교안은 `Presentations/`, C 실습 소스는 `Codes/`에 있습니다. 교안 안의 `labs/` 경로는 이 저장소의 `Codes/`에 해당합니다.
+11주차 발표 자료는 `Presentation/` 바로 아래에, 코드는 `Code/class11-01/`에 있습니다. 이전 주차 자료는 기존 `Presentations/`·`Codes/` 경로를 유지합니다. 교안의 `labs/class11-01`은 `Code/class11-01/`에 해당합니다.
 
-8주차부터는 [architecture.md](architecture.md)의 규칙대로 만듭니다. 예제 코드와 PPTX(`classNN-MM_V0N.pptx`)는 `output/weekNN/`에, Markdown 문서는 `docs/weekNN/`에, 생성 도구는 `tools/slides/`에 둡니다. 리눅스 커널 내부는 별도 프로젝트로 분리해 다루지 않습니다.
+8주차부터는 [architecture.md](architecture.md)의 규칙대로 만듭니다. 예제 코드와 PPTX(`classNN-MM_V0N.pptx`)는 `output/weekNN/`에, Markdown 문서는 `docs/weekNN/`에, 생성 도구는 `tools/slides/`에 둡니다. 리눅스 커널 내부는 별도 프로젝트로 분리해 다루지 않습니다. 11주차의 폴더 배치는 사용자 지정에 따라 `Presentation/`·`Code/`를 사용합니다.
 
 ## 3주차
 
@@ -49,9 +49,9 @@
 
 | 자료 | 교안 | 실습·안내 |
 |---|---|---|
-| 1차시: 메모리 매핑 | [PPTX V08](output/week11/week11-class01-v08.pptx) | [실습 안내](docs/week11/class11-01/README.md) · [구성과 학습 효과](docs/week11/class11-01/LECTURE.md) |
+| 1차시: 메모리 매핑 | [PPTX V08](Presentation/week11-class01-v08.pptx) | [실습 안내](docs/week11/class11-01/README.md) · [구성과 학습 효과](docs/week11/class11-01/LECTURE.md) |
 
-78장 교안입니다. 파일 없는 입문 예제 `mmap_basic`으로 시작해 `mapcat`, `mapmode`, `countnl`을 예제별 섹션으로 학습합니다. 주석 포함 소스는 `output/week11/labs/class11-01/`에 있습니다. 이전 V02는 보존했습니다.
+78장 교안입니다. 파일 없는 입문 예제 `mmap_basic`으로 시작해 `mapcat`, `mapmode`, `countnl`을 예제별 섹션으로 학습합니다. 주석 포함 소스는 `Code/class11-01/`에 있습니다. 이전 V02는 보존했습니다.
 
 ## 실습 실행
 
@@ -85,3 +85,5 @@ ZIP 자료는 독립적으로 사용할 수 있도록 원래의 `weekXX-...` 파
 | V07 | 2026-10-13 | 7주차 교안 V05: 코드 읽기를 각 부의 직접 확인 뒤로 재배치. 쪽 번호 갱신. |
 | V08 | 2026-10-14 | 8주차 이후 제작 규칙(architecture.md), output·docs·tools 폴더 안내 추가. |
 | V09 | 2026-11-10 | 11주차 V08 교안·입문 예제와 학습 효과 안내, 주차별 폴더 정리. |
+
+| V10 | 2026-11-10 | 11주차 코드를 Code/class11-01로, 교안을 하위 폴더 없는 Presentation으로 이동. |

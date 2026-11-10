@@ -2,9 +2,9 @@
 
 **V08** · 2026-11-10
 
-[최신 교안](../../../output/week11/week11-class01-v08.pptx) · [실습 안내](README.md) · [이전 V02](../../../output/week11/week11-class01-v02.pptx)
+[최신 교안](../../../Presentation/week11-class01-v08.pptx) · [실습 안내](README.md) · [이전 V02](../../../Presentation/week11-class01-v02.pptx)
 
-교안은 78장입니다. 발표자 노트에 설명과 참고 링크가 있습니다. 발표 자료와 실습 소스는 `output/week11/`, 문서는 `docs/week11/`에 둡니다. 빌드 산출물과 실습 데이터는 커밋하지 않습니다.
+교안은 78장입니다. 발표자 노트에 설명과 참고 링크가 있습니다. 발표 자료는 `Presentation/` 바로 아래에, 실습 소스는 `Code/class11-01/`에, 문서는 `docs/week11/`에 둡니다. 빌드 산출물과 실습 데이터는 커밋하지 않습니다.
 
 | 쪽 | 내용 |
 |---|---|

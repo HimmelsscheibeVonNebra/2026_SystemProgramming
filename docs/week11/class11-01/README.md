@@ -1,6 +1,6 @@
-# 11주차 1차시 실습 — 메모리 매핑 (output/week11/labs/class11-01)
+# 11주차 1차시 실습 — 메모리 매핑 (Code/class11-01)
 
-[교안 V08](../../../output/week11/week11-class01-v08.pptx)의 입문 예제 1개와 본 예제 3개입니다. mmap_basic을 먼저 실행하고 각 부의 예제로 이어갑니다.
+[교안 V08](../../../Presentation/week11-class01-v08.pptx)의 입문 예제 1개와 본 예제 3개입니다. mmap_basic을 먼저 실행하고 각 부의 예제로 이어갑니다.
 
 | 파일 | 부 | 하는 일 |
 |---|---|---|
@@ -11,7 +11,7 @@
 
 ## 빌드와 검사
 
-저장소 루트에서 `cd output/week11/labs/class11-01`로 이동한 뒤 실행합니다.
+저장소 루트에서 `cd Code/class11-01`로 이동한 뒤 실행합니다.
 
 ```bash
 make            # gcc -Wall -Wextra -O2 -g

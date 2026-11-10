@@ -1,14 +1,17 @@
-# 11주차 1차시 실습 — 메모리 매핑 (labs/class11-01)
+# 11주차 1차시 실습 — 메모리 매핑 (output/week11/labs/class11-01)
 
-교안 `output/week11/week11-class01-v02.pptx`의 예제 3개입니다. 각 부(1부·2부·3부)에 하나씩 대응합니다.
+[교안 V08](../../../output/week11/week11-class01-v08.pptx)의 입문 예제 1개와 본 예제 3개입니다. mmap_basic을 먼저 실행하고 각 부의 예제로 이어갑니다.
 
 | 파일 | 부 | 하는 일 |
 |---|---|---|
+| `mmap_basic.c` | 입문 | 파일 없이 정수 하나를 익명 매핑하고 42를 쓰고 읽은 뒤 해제한다. 주석을 포함한 전체 소스다. |
 | `mapcat.c` | 1부 | 파일을 `mmap(PROT_READ, MAP_PRIVATE)`으로 매핑해 표준 출력으로 내보낸다. `-p`는 Enter를 기다려 `/proc/PID/maps`를 관찰하게 한다. |
 | `mapmode.c` | 2부 | `private` / `shared`: 첫 줄을 대문자로 바꾸고 `pread`로 파일을 다시 읽는다. `anon`: fork 뒤 전역 변수와 익명 공유 매핑을 비교한다. `race`: 여러 자식이 공유 카운터를 동시에 증가시킨다. |
 | `countnl.c` | 3부 | 같은 파일의 개행을 `read`(64 KiB 버퍼)와 `mmap`으로 세고 경과 시간과 minor/major fault를 출력한다. `drop`은 `posix_fadvise(DONTNEED)`로 그 파일의 페이지 캐시를 비운다. |
 
 ## 빌드와 검사
+
+저장소 루트에서 `cd output/week11/labs/class11-01`로 이동한 뒤 실행합니다.
 
 ```bash
 make            # gcc -Wall -Wextra -O2 -g
@@ -17,6 +20,15 @@ make clean
 ```
 
 macOS에서도 빌드됩니다. 다만 `countnl drop`은 `posix_fadvise`가 없어 안내만 하고 끝나고, 자동 검사는 Linux 기준입니다.
+
+## 입문: mmap만으로 메모리 쓰고 읽기
+
+```bash
+make mmap_basic
+./mmap_basic
+```
+
+예상 출력은 `*p = 42`입니다. `mmap_basic.c`의 주석은 각 인자, `MAP_FAILED` 검사, 포인터 접근, `munmap`을 설명합니다. 파일과 fork 없이 mmap의 생성·사용·해제부터 확인합니다.
 
 ## 실행 예
 

@@ -1,6 +1,6 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra -O2 -g
-PROGS   = mapcat mapmode countnl
+PROGS   = mmap_basic mapcat mapmode countnl
 
 all: $(PROGS)
 

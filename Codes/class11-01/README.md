@@ -1,6 +1,8 @@
-# 11주차 1차시 실습 — 메모리 매핑 (Code/class11-01)
+# 11주차 1차시 실습 — 메모리 매핑 (Codes/class11-01)
 
-[교안 V08](../../../Presentation/week11-class01-v08.pptx)의 입문 예제 1개와 본 예제 3개입니다. mmap_basic을 먼저 실행하고 각 부의 예제로 이어갑니다.
+**V01** · 2026-11-16
+
+[교안 V08](../../Presentations/week11-class01-v08.pptx)의 입문 예제 1개와 본 예제 3개입니다. mmap_basic을 먼저 실행하고 각 부의 예제로 이어갑니다.
 
 | 파일 | 부 | 하는 일 |
 |---|---|---|
@@ -11,7 +13,7 @@
 
 ## 빌드와 검사
 
-저장소 루트에서 `cd Code/class11-01`로 이동한 뒤 실행합니다.
+저장소 루트에서 `cd Codes/class11-01`로 이동한 뒤 실행합니다.
 
 ```bash
 make            # gcc -Wall -Wextra -O2 -g
@@ -56,3 +58,9 @@ seq 1 30000000 > big.txt                             # 약 247 MB
 ## 측정 환경 메모
 
 교안의 화면은 Ubuntu 24.04 컨테이너(Docker, aarch64, glibc 2.39)에서 2026-11-09에 캡처했습니다. Docker의 overlayfs 위 파일에서는 `posix_fadvise(DONTNEED)`가 캐시를 비우지 못했으므로, 실습 폴더는 ext4 볼륨에 두었습니다. 또 Docker Desktop은 디스크가 Mac 호스트 캐시 위에 있어 cold와 warm의 시간 차이가 실제 디스크보다 작게 나옵니다. 실습 서버에서 다시 재 보기를 권합니다.
+
+## 변경 이력
+
+| 버전 | 날짜 | 내용 |
+|---|---|---|
+| V01 | 2026-11-16 | 버전 표기 시작. 폴더 정리에 맞춰 경로를 `Codes/`·`Presentations/`로 갱신. |

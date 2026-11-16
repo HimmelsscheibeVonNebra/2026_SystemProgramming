@@ -1,13 +1,13 @@
 # Week09-class01 실습 · 시그널: 종료 상태·처리·관찰
 
-**V01** · 2026-10-26
+**V02** · 2026-11-16
 
-교안: [9주차 1차시 V04 PPTX](../../../output/week09/week09-class01-v04.pptx) (74장). 실습: [소스 폴더](../../../output/week09/labs/class09-01/). 교안의 `labs/class09-01/`은 이 소스 폴더에 해당합니다. 기록지: [REPORT.md](REPORT.md), 교수자 안내: [INSTRUCTOR.md](INSTRUCTOR.md).
+교안: [9주차 1차시 V04 PPTX](../../Presentations/week09-class01-v04.pptx) (74장). 실습: [소스 폴더](./). 교안의 `labs/class09-01/`은 이 소스 폴더에 해당합니다. 기록지: [REPORT.md](REPORT.md), 교수자 안내: [INSTRUCTOR.md](INSTRUCTOR.md).
 
 프로그램이 어떻게 끝났는지(종료 코드·시그널·코어) 스스로 보고하게 하고, 같은 사실을 셸의 `$?`·`/proc/PID/status`·`kill -l`로 밖에서 다시 확인합니다. 준비 도구는 `cc`, `make`, `python3`이고 저장소 루트에서 아래 명령으로 실습 폴더에 들어간 뒤 실행합니다.
 
 ```sh
-cd output/week09/labs/class09-01
+cd Codes/class09-01
 make
 python3 test_examples.py
 ```
@@ -161,3 +161,4 @@ kill -l                       # 셸이 아는 번호→이름
 | 버전 | 날짜 | 내용 |
 |---|---|---|
 | V01 | 2026-10-26 | 9주차 1차시 실습 자료를 저장소에 추가. |
+| V02 | 2026-11-16 | 폴더 정리: 실습은 `Codes/class09-01/`, 교안은 `Presentations/`로 경로 갱신. |

@@ -78,14 +78,14 @@
 /Codes/**/run.*/
 
 # Week11 generated binaries and lab data
-/Code/class11-01/mmap_basic
-/Code/class11-01/mapcat
-/Code/class11-01/mapmode
-/Code/class11-01/countnl
-/Code/class11-01/*.dSYM/
-/Code/class11-01/hello.txt
-/Code/class11-01/empty.txt
-/Code/class11-01/big.txt
-/Code/class11-01/p.txt
-/Code/class11-01/s.txt
-/Code/class11-01/tiny.txt
+/Codes/class11-01/mmap_basic
+/Codes/class11-01/mapcat
+/Codes/class11-01/mapmode
+/Codes/class11-01/countnl
+/Codes/class11-01/*.dSYM/
+/Codes/class11-01/hello.txt
+/Codes/class11-01/empty.txt
+/Codes/class11-01/big.txt
+/Codes/class11-01/p.txt
+/Codes/class11-01/s.txt
+/Codes/class11-01/tiny.txt

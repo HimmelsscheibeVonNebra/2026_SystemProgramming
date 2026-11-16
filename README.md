@@ -1,6 +1,6 @@
 # 2026 시스템 프로그래밍
 
-**V11** · 2026-11-16
+**V12** · 2026-11-16
 
 교안은 모두 `Presentations/`에, 실습 코드와 그 안내 문서(README·REPORT·INSTRUCTOR)는 모두 `Codes/classNN-MM/`에 있습니다. 교안에 나오는 `labs/classNN-MM`은 `Codes/classNN-MM/`에 해당합니다. 리눅스 커널 내부는 별도 프로젝트로 분리해 다루지 않습니다.
 
@@ -69,7 +69,7 @@
 
 | 자료 | 교안 | 실습 |
 |---|---|---|
-| 1차시: 파이프 | [PPTX V02](Presentations/week12-class01-v02.pptx) | [소스](Codes/class12-01/) |
+| 1차시: 파이프 | [PPTX V02](Presentations/week12-class01-v02.pptx) | [120분 대본](Presentations/week12-class01-script.md) · [소스](Codes/class12-01/) |
 
 ## 실습 실행
 
@@ -105,3 +105,4 @@ ZIP 자료는 독립적으로 사용할 수 있도록 원래의 `weekXX-...` 파
 | V09 | 2026-11-10 | 11주차 V08 교안·입문 예제와 학습 효과 안내, 주차별 폴더 정리. |
 | V10 | 2026-11-10 | 11주차 코드를 Code/class11-01로, 교안을 하위 폴더 없는 Presentation으로 이동. |
 | V11 | 2026-11-16 | 폴더 정리: 모든 교안을 Presentations로, 모든 실습 코드와 안내 문서를 Codes로 통합. Code·Presentation·output·docs 폴더 제거, 9·10·12주차 표 추가. |
+| V12 | 2026-11-16 | 12주차 1차시 120분 진행 대본 링크 추가. |

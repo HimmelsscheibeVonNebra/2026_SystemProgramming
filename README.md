@@ -1,6 +1,6 @@
 # 2026 시스템 프로그래밍
 
-**V12** · 2026-11-16
+**V14** · 2026-11-23
 
 교안은 모두 `Presentations/`에, 실습 코드와 그 안내 문서(README·REPORT·INSTRUCTOR)는 모두 `Codes/classNN-MM/`에 있습니다. 교안에 나오는 `labs/classNN-MM`은 `Codes/classNN-MM/`에 해당합니다. 리눅스 커널 내부는 별도 프로젝트로 분리해 다루지 않습니다.
 
@@ -71,6 +71,15 @@
 |---|---|---|
 | 1차시: 파이프 | [PPTX V02](Presentations/week12-class01-v02.pptx) | [120분 대본](Presentations/week12-class01-script.md) · [소스](Codes/class12-01/) |
 
+## 13주차
+
+| 자료 | 교안 | 실습 |
+|---|---|---|
+| 1차시: IPC — 왜 필요하고 무엇을 고르나 · POSIX 메시지 큐 | [PPTX V02](Presentations/week13-class01-v02.pptx) | [소스](Codes/class13-01/) |
+| 2차시: 공유 메모리와 세마포어 · 스레드의 동기화 | [PPTX V03](Presentations/week13-class02-v03.pptx) | [소스](Codes/class13-02/) |
+
+1차시는 55장입니다. 왜 IPC가 필요한지(입문 예제 `isolated`)와 IPC의 지도를 먼저 보고, POSIX 메시지 큐(`pmq`)와 요청–응답 서버(`mqserver` · `mqclient`)를 다룹니다. 2차시는 70장입니다. 3쪽에 예제 일곱 개를 왜 실행하는지 정리했고, POSIX 공유 메모리(`shmhello` · `shmrace`), 세마포어(`semcount`), 생산자–소비자(`ringbuf`), 스레드의 뮤텍스 · 조건 변수 · 세마포어(`thcount` · `thqueue` · `thlimit`)를 다룹니다. 실행 화면은 Ubuntu 24.04 컨테이너에서 받은 실제 화면이며, `make -C Codes/class13-01 test`(27개)와 `make -C Codes/class13-02 test`(40개)로 검사합니다. POSIX 메시지 큐와 `sem_init`은 Linux 전용입니다.
+
 ## 실습 실행
 
 Ubuntu 일반 사용자 환경에서 C 컴파일러, `make`, `python3`를 준비합니다. 각 실습 폴더의 README를 따라 실행합니다.
@@ -106,3 +115,4 @@ ZIP 자료는 독립적으로 사용할 수 있도록 원래의 `weekXX-...` 파
 | V10 | 2026-11-10 | 11주차 코드를 Code/class11-01로, 교안을 하위 폴더 없는 Presentation으로 이동. |
 | V11 | 2026-11-16 | 폴더 정리: 모든 교안을 Presentations로, 모든 실습 코드와 안내 문서를 Codes로 통합. Code·Presentation·output·docs 폴더 제거, 9·10·12주차 표 추가. |
 | V12 | 2026-11-16 | 12주차 1차시 120분 진행 대본 링크 추가. |
+| V14 | 2026-11-23 | 13주차(IPC) 1차시 교안 V02 · 2차시 교안 V03 · 예제 소스 추가. |
